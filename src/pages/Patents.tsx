@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const patents = [
   {
-    title: "how are ta",
+    title: "Check Valve System",
     number: "US10627001B2",
     description: "I identified an opportunity to redesign a check valve as part of a project to innovate products using 3D printing. The original design consisted of 11 separate pieces, requiring 11 assembly steps for manufacturing. Leveraging additive manufacturing and the HP Jet Fusion 3D printer, I consolidated all components into a single, 3D-printed piece. The redesigned valve self-activates when the mixer is placed on the cartridge, achieved by springs pressing past a shoulder to create pressure on the ball, preventing backflow. This innovation eliminated assembly steps, significantly reducing manufacturing time and costs while improving efficiency.",
     images: [
