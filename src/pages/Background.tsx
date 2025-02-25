@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, Briefcase, GraduationCap, User, Trophy, Wrench, FileText } from 'lucide-react';
+import { PDFModal } from '../components/PDFModal';
 
 const Background = () => {
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
+
   const experience = [
     {
       company: "IMA Dairy & Food",
@@ -11,18 +14,17 @@ const Background = () => {
       responsibilities: [
         "Established new retrofit division in the U.S., identifying opportunities and engaging with customers",
         "Led projects from inception to completion, coordinating with internal teams, sales, and vendors",
-        "Achieved 28% increase in efficiency and 22% increase in OLE through process improvements",
         "Improved and innovated existing systems and processes by retrofitting equipment with new technologies and techniques, significantly enhancing efficiency and reducing downtime."
       ]
     },
     {
       company: "IMA Dairy & Food",
-      title: "Service Engineer",
+      title: "Mechanical Engineer",
       period: "Aug 2021 – Jan 2024",
       responsibilities: [
         "Performed installation, commissioning, and troubleshooting of equipment at customer locations",
-        "Provided comprehensive technical support and maintenance services",
-        "Ensured optimal equipment performance through regular maintenance and upgrades"
+        "Achieved 28% increase in efficiency and 22% increase in OLE through process improvements",
+        "Developed custom modifications to integrate new technologies and processes into existing machines, enhancing their performance and efficiency"
       ]
     },
     {
@@ -77,6 +79,12 @@ const Background = () => {
 
   return (
     <div className="min-h-screen tech-background relative overflow-hidden">
+      <PDFModal 
+        isOpen={isResumeOpen}
+        onClose={() => setIsResumeOpen(false)}
+        pdfUrl="https://github.com/garrettdfaino/portfolio/blob/main/public/images/profile/resumev2.png?raw=true"
+      />
+      
       {/* Animated dots */}
       <div className="tech-dot"></div>
       <div className="tech-dot"></div>
@@ -141,15 +149,13 @@ const Background = () => {
                 <Briefcase className="text-blue-600" size={28} />
                 <h2 className="text-2xl font-bold text-gray-900">Professional Experience</h2>
               </div>
-              <a
-                href="https://github.com/garrettdfaino/portfolio/blob/main/public/images/profile/resume.png?raw=true"
-                target="_blank"
-                rel="noopener noreferrer"
+              <button
+                onClick={() => setIsResumeOpen(true)}
                 className="inline-flex items-center gap-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
               >
                 <FileText size={20} />
                 View Resume
-              </a>
+              </button>
             </div>
             <div className="space-y-8">
               {experience.map((job, index) => (
