@@ -15,7 +15,7 @@ const Background = () => {
         "Led the US retrofit division to enhance machine efficiency and reliability, optimizing existing packaging and filling systems.",
         "Utilized the customer’s CMMS data to identify high-impact failure points, prioritize machine upgrades, and develop targeted solutions that improved system reliability and overall machine efficiency.",
         "Integrated AI-driven Keyence vision systems to improve quality control, ensuring only defect-free products were packaged and providing a scalable inspection solution, resulting in a 5% increase in yield.",
-        "Designed and implemented a fully automated box infeed system, replacing the manual process and eliminating the number one downtime issue "missing boxes" across six machines."
+        "Designed and implemented a fully automated box infeed system, replacing the manual process and eliminating the number one downtime issue (missing boxes) across six machines."
       ]
     },
     {
