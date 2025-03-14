@@ -85,7 +85,7 @@ const Background = () => {
       <PDFModal 
         isOpen={isResumeOpen}
         onClose={() => setIsResumeOpen(false)}
-        pdfUrl="https://github.com/garrettdfaino/portfolio/blob/main/public/images/profile/resumev2.png?raw=true"
+        pdfUrl="https://github.com/garrettdfaino/engineeringportfolio/blob/main/public/images/profile/resume%20screenshot.png?raw=true"
       />
       
       {/* Animated dots */}
