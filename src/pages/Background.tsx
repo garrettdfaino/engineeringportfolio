@@ -12,9 +12,10 @@ const Background = () => {
       title: "Optimization Engineer",
       period: "Jan 2024 – Oct 2024",
       responsibilities: [
-        "Established new retrofit division in the U.S., identifying opportunities and engaging with customers",
-        "Led projects from inception to completion, coordinating with internal teams, sales, and vendors",
-        "Improved and innovated existing systems and processes by retrofitting equipment with new technologies and techniques, significantly enhancing efficiency and reducing downtime."
+        "Led the US retrofit division to enhance machine efficiency and reliability, optimizing existing packaging and filling systems.",
+        "Utilized the customer’s CMMS data to identify high-impact failure points, prioritize machine upgrades, and develop targeted solutions that improved system reliability and overall machine efficiency.",
+        "Integrated AI-driven Keyence vision systems to improve quality control, ensuring only defect-free products were packaged and providing a scalable inspection solution, resulting in a 5% increase in yield.",
+        "Designed and implemented a fully automated box infeed system, replacing the manual process and eliminating the number one downtime issue "missing boxes" across six machines."
       ]
     },
     {
@@ -22,9 +23,10 @@ const Background = () => {
       title: "Mechanical Engineer",
       period: "Aug 2021 – Jan 2024",
       responsibilities: [
-        "Performed installation, commissioning, and troubleshooting of equipment at customer locations",
-        "Achieved 28% increase in efficiency and 22% increase in OLE through process improvements",
-        "Developed custom modifications to integrate new technologies and processes into existing machines, enhancing their performance and efficiency"
+        "Installed and commissioned new equipment, configuring electrical systems, performing I/O checks, and setting up PLC communication protocols to enable seamless data exchange and system synchronization.",
+        "Designed and implemented custom mechanical solutions tailored to customer needs, leveraging CAD for 3D modeling, 3D printing, and CNC machining to prototype and validate designs before final implementation.",
+        "Served as the primary contact for a Service Level Agreement (SLA) with a key customer, leading initiatives that resulted in a 28% increase in machine efficiency (OEE), a 22% boost in overall line efficiency (OLE). Successfully reduced critical defect rates below the maximum allowable target through targeted process improvements, while most importantly rebuilding the customer relationship.",
+        "Developed and integrated retrofit modifications to existing machines, implementing Allen Bradley PLCs, servos, encoders etc. to improve motion control, enhance precision and increase overall system reliability."
       ]
     },
     {
@@ -33,8 +35,9 @@ const Background = () => {
       period: "2019 – Aug 2021",
       responsibilities: [
         "Awarded two patents for product innovation, with a third pending approval",
-        "Designed and constructed custom automated filling machines",
-        "Collaborated with customers to troubleshoot system issues, design new products, and innovate existing ones, managing all design, prototyping, R&D, and testing before production."
+        "Developed and built custom automated filling machines utilizing PLC-controlled electronics, solenoid valves, sensors and actuators to control the filling process for new products like the ecopaCC and MixPeel. By developing an effective filling solution, I enabled the company to bring these products to market, making sales possible.",
+        "Designed and optimized new and existing products in SolidWorks, leveraging SLS, SLA, and FDM 3D printing for rapid prototyping and functional testing before full-scale production.",
+        "Led R&D efforts, overseeing material selection, experimental testing, and innovative design to enhance product performance and manufacturability."
       ]
     }
   ];
