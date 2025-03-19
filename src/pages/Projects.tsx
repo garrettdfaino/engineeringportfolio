@@ -5,6 +5,12 @@ import { WelcomeModal } from '../components/WelcomeModal';
 
 const projects = [
   {
+    id: 'f600',
+    title: 'F600 Success',
+    summary: 'Revitalized the discontinued F600 sachet machine by enhancing its automation and reliability through hands-on troubleshooting, iterative design improvements and process optimization.',
+    image: 'https://github.com/garrettdfaino/portfolio/blob/main/public/images/projects/F600-2.jpg?raw=true'
+  },
+  {
     id: 'ecopacc',
     title: 'EcoPacc Filling Machine',
     summary: 'Automated filling system for eco-friendly packaging solutions',
