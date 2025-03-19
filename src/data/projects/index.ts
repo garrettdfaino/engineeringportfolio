@@ -4,8 +4,10 @@ import { mixpeel } from './mixpeel';
 import { sla } from './sla';
 import { dispenser } from './dispenser';
 import { n95 } from './n95';
+import { f600 } from './f600';
 
 export const projectData = {
+  f600,
   ecopacc,
   keyence,
   mixpeel,
