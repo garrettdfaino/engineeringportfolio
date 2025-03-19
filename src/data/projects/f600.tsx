@@ -4,13 +4,13 @@ import { ContentVideo } from '../../components/ContentVideo';
 
 export const f600 = {
   title: 'F600 Success',
-  image: 'https://github.com/garrettdfaino/portfolio/blob/main/public/images/projects/F600-1.png?raw=true',
+  image: 'https://github.com/garrettdfaino/portfolio/blob/main/public/images/projects/f600-1.png?raw=true',
   impact: "Working on the F600 taught me that real-world engineering is forged in the crucible of challenges. This project deepened my understanding of automation, complex system integration, and international collaboration. I learned that hands-on problem-solving—despite initial failures and steep learning curves—is essential to developing innovative, long-term solutions that not only enhance machine performance but also drive customer satisfaction.",
   overview: [
     <div key="overview-content">
       <div className="float-right w-2/5 ml-8 mb-6">
         <ContentImage 
-          src="https://github.com/garrettdfaino/portfolio/blob/main/public/images/projects/F600-4.png?raw=true"
+          src="https://github.com/garrettdfaino/portfolio/blob/main/public/images/projects/f600-4.png?raw=true"
           alt="Industrial automation upgrade"
           width="large"
           position="right"
@@ -44,7 +44,7 @@ export const f600 = {
       <div>
         <div className="float-right w-2/5">
           <ContentVideo 
-            src="https://github.com/garrettdfaino/portfolio/raw/refs/heads/main/public/images/projects/F600-6.mp4"
+            src="https://github.com/garrettdfaino/portfolio/raw/refs/heads/main/public/images/projects/f600-6.mp4"
             width="large"
             position="right"
             marginLeft={8}
@@ -74,7 +74,7 @@ export const f600 = {
       <div>
         <div className="float-right w-2/5">
           <ContentVideo 
-            src="https://github.com/garrettdfaino/portfolio/raw/refs/heads/main/public/images/projects/F600-7.mp4"
+            src="https://github.com/garrettdfaino/portfolio/raw/refs/heads/main/public/images/projects/f600-7.mp4"
             width="large"
             position="right"
             marginLeft={8}
