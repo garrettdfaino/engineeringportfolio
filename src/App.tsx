@@ -9,7 +9,8 @@ import {
   Linkedin,
   Folder,
   Award,
-  X
+  X,
+  ArrowRight
 } from 'lucide-react';
 import Patents from './pages/Patents';
 import Projects from './pages/Projects';
@@ -122,7 +123,7 @@ function Home() {
 
       {/* Main Content */}
       <main className="container mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {/* Patents Section */}
           <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow">
             <div className="flex items-center gap-3 mb-4">
@@ -167,6 +168,33 @@ function Home() {
             <Link to="/background" className="text-blue-600 hover:text-blue-800 font-medium flex items-center gap-2">
               View Background <FileText size={18} />
             </Link>
+          </div>
+        </div>
+
+        {/* Featured Project */}
+        <div className="mb-16">
+          <h2 className="text-3xl font-bold mb-8">Featured Project</h2>
+          <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+            <div className="h-[400px]">
+              <img 
+                src="https://github.com/garrettdfaino/portfolio/blob/main/public/images/projects/sla-5.jpg?raw=true"
+                alt="SLA Line Efficiency Project"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="p-8">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">SLA Line Efficiency</h3>
+              <p className="text-gray-600 mb-6">
+                Led the implementation of a critical Service Level Agreement for one of our largest customers, driving significant improvements in machine performance and operational efficiency. Through data-driven optimization and hands-on problem-solving, we achieved a 28% increase in Overall Equipment Effectiveness while establishing lasting customer trust and collaboration.
+              </p>
+              <Link 
+                to="/projects/sla"
+                className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium"
+              >
+                View Project Details
+                <ArrowRight size={20} className="ml-2" />
+              </Link>
+            </div>
           </div>
         </div>
 
