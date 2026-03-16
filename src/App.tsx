@@ -177,7 +177,7 @@ function Home() {
           <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
             <div className="h-[400px]">
               <img 
-                src="https://github.com/garrettdfaino/portfolio/blob/main/public/images/projects/sla-5.jpg?raw=true"
+                src="https://raw.githubusercontent.com/garrettdfaino/portfolio/main/public/images/projects/sla-5.jpg"
                 alt="SLA Line Efficiency Project"
                 className="w-full h-full object-cover"
               />
