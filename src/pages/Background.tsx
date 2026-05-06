@@ -8,14 +8,23 @@ const Background = () => {
 
   const experience = [
     {
+      company: "Ground Up Innovations",
+      title: "Senior Mechanical Engineer",
+      period: "05/2025 – Present",
+      responsibilities: [
+        "Technical lead for a large-scale lithium extraction field pilot, converting P&IDs into a deployable skid system, designing layout and structural weldments, coordinating fabrication, and executing FAT before deployment.",
+        "Regularly step into new technical areas with little prior exposure, quickly learning the underlying technology and developing engineered solutions under tight timelines.",
+        "Create SOPs for medium-volume production builds and oversee junior engineers during execution, guiding procurement, assembly, and quality processes to reduce errors and keep projects on schedule."
+      ]
+    },
+    {
       company: "IMA Dairy & Food",
-      title: "Optimization Engineer",
+      title: "Manufacturing Engineer (Process Improvement)",
       period: "Jan 2024 – Oct 2024",
       responsibilities: [
-        "Led the US retrofit division to enhance machine efficiency and reliability, optimizing existing packaging and filling systems.",
-        "Utilized the customer’s CMMS data to identify high-impact failure points, prioritize machine upgrades, and develop targeted solutions that improved system reliability and overall machine efficiency.",
-        "Integrated AI-driven Keyence vision systems to improve quality control, ensuring only defect-free products were packaged and providing a scalable inspection solution, resulting in a 5% increase in yield.",
-        "Designed and implemented a fully automated box infeed system, replacing the manual process and eliminating the number one downtime issue (missing boxes) across six machines."
+        "Established new retrofit division in the U.S., identifying opportunities and engaging with customers",
+        "Led projects from inception to completion, coordinating with internal teams, sales, and vendors",
+        "Improved and innovated existing systems and processes by retrofitting equipment with new technologies and techniques, significantly enhancing efficiency and reducing downtime."
       ]
     },
     {
@@ -23,10 +32,9 @@ const Background = () => {
       title: "Mechanical Engineer",
       period: "Aug 2021 – Jan 2024",
       responsibilities: [
-        "Installed and commissioned new equipment, configuring electrical systems, performing I/O checks, and setting up PLC communication protocols to enable seamless data exchange and system synchronization.",
-        "Designed and implemented custom mechanical solutions tailored to customer needs, leveraging CAD for 3D modeling, 3D printing, and CNC machining to prototype and validate designs before final implementation.",
-        "Served as the primary contact for a Service Level Agreement (SLA) with a key customer, leading initiatives that resulted in a 28% increase in machine efficiency (OEE), a 22% boost in overall line efficiency (OLE). Successfully reduced critical defect rates below the maximum allowable target through targeted process improvements, while most importantly rebuilding the customer relationship.",
-        "Developed and integrated retrofit modifications to existing machines, implementing Allen Bradley PLCs, servos, encoders etc. to improve motion control, enhance precision and increase overall system reliability."
+        "Performed installation, commissioning, and troubleshooting of equipment at customer locations",
+        "Achieved 28% increase in efficiency and 22% increase in OLE through process improvements",
+        "Developed custom modifications to integrate new technologies and processes into existing machines, enhancing their performance and efficiency"
       ]
     },
     {
@@ -35,9 +43,8 @@ const Background = () => {
       period: "2019 – Aug 2021",
       responsibilities: [
         "Awarded two patents for product innovation, with a third pending approval",
-        "Developed and built custom automated filling machines utilizing PLC-controlled electronics, solenoid valves, sensors and actuators to control the filling process for new products like the ecopaCC and MixPeel. By developing an effective filling solution, I enabled the company to bring these products to market, making sales possible.",
-        "Designed and optimized new and existing products in SolidWorks, leveraging SLS, SLA, and FDM 3D printing for rapid prototyping and functional testing before full-scale production.",
-        "Led R&D efforts, overseeing material selection, experimental testing, and innovative design to enhance product performance and manufacturability."
+        "Designed and constructed custom automated filling machines",
+        "Collaborated with customers to troubleshoot system issues, design new products, and innovate existing ones, managing all design, prototyping, R&D, and testing before production."
       ]
     }
   ];
@@ -67,16 +74,16 @@ const Background = () => {
     "Automation",
     "Innovation",
     "Mechanical Design",
-    "Problem Solving",
+    "Manufacturing",
     "SolidWorks",
     "Mechatronics",
     "DOE",
     "Project Management",
     "3D Printing",
-    "Process Optimization",
+    "Process Improvment",
     "System Design & Analysis",
     "Rapid Prototyping",
-    "Customer Relations",
+    "DFM",
     "Filling/Packaging"
   ];
 
@@ -85,7 +92,7 @@ const Background = () => {
       <PDFModal 
         isOpen={isResumeOpen}
         onClose={() => setIsResumeOpen(false)}
-        pdfUrl="https://github.com/garrettdfaino/engineeringportfolio/blob/main/public/images/profile/resume%20screenshot.png?raw=true"
+        pdfUrl="https://github.com/garrettdfaino/portfolio/blob/main/public/images/profile/resumev2.png?raw=true"
       />
       
       {/* Animated dots */}
@@ -112,7 +119,7 @@ const Background = () => {
             <div className="md:flex">
               <div className="md:w-1/3">
                 <img 
-                  src="https://github.com/garrettdfaino/portfolio/blob/main/public/images/profile/profilepic.jpg?raw=true"
+                  src="https://raw.githubusercontent.com/garrettdfaino/portfolio/main/public/images/profile/profilepic.jpg"
                   alt="Garrett Faino"
                   className="w-full h-[400px] object-cover"
                 />
@@ -164,7 +171,7 @@ const Background = () => {
               {experience.map((job, index) => (
                 <div key={index} className="border-l-2 border-blue-600 pl-6">
                   <h3 className="text-xl font-semibold text-gray-900">{job.title}</h3>
-                  <div className="text-blue-600 font-medium mb-2">{job.company}</div>
+                  <div className="text-blue-600 font-medium mb-1">{job.company}</div>
                   <div className="text-gray-500 text-sm mb-3">{job.period}</div>
                   <ul className="list-disc list-inside space-y-2 text-gray-600">
                     {job.responsibilities.map((resp, idx) => (
